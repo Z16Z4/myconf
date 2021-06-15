@@ -17,8 +17,8 @@ def greeks_qemu_config():
     os.system("sudo mkinitcpio -p linux")
     os.system("sudo pacman -Syu")
     #creating mount point 
-    os.system("mkdir /home/media")
-    os.system("mkdir /home/media/iso")
+    os.system("mkdir /home/greek/media")
+    os.system("mkdir /home/greek/media/iso")
     os.system("sudo mount /dev/sda1 /home/greek/media/iso")
 
     #moving qemu configuration
@@ -48,7 +48,7 @@ def greeks_script_setup():
     os.system("openbox --restart")
     os.system("sudo cp ./configurations/greeks_config/10-looking-glass.conf /etc/tmpfiles.d")
     os.system("sudo cp ./configurations/greeks_config/20-amdgpu.conf /usr/share/X11/xorg.conf.d")
-    os.system("sudo chmod +x ./configurations/greeks_config/install_others.sh")
+    os.system("sudo chmod +x ./install_others.sh")
     print("please run additional script for looking glass etc! (cant run as sudo)")
     display.reboot_menu()
     

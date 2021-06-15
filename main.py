@@ -21,9 +21,9 @@ while option != 0:
         display.sep()
         display.commands()
     elif option == 'greeks install' or option == '1':
+        packages.greeks_install()
         config.greek_grub_config()
         config.greeks_bashrc()
-        config.greeks_qemu_config()
         config.greeks_qemu_config()
         config.greeks_script_setup()
     elif option == '2' or option == 'auto setup':
