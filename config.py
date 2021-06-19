@@ -37,6 +37,7 @@ def greeks_qemu_config():
     #defining virt-manager configurations
     os.system("sudo virsh define ./configurations/greeks_config/virt-manager/win10.xml")
     os.system("sudo virsh define ./configurations/greeks_config/virt-manager/macOS.xml")
+    os.system("sudo virsh define ./configurations/greeks_config/virt-manager/win11.xml")
 
 def greeks_script_setup():
     os.system("mkdir /home/greek/scripts")
@@ -46,6 +47,7 @@ def greeks_script_setup():
     os.system("sudo cp ./configurations/greeks_config/miner/* /home/greek/miner")
     os.system("sudo cp ./configurations/greeks_config/rc.xml /home/greek/.config/openbox")
     os.system("openbox --restart")
+    os.system("sudo cp ./configurations/greeks_config/compton.conf /home/greek/.config/compton.conf")
     os.system("sudo cp ./configurations/greeks_config/10-looking-glass.conf /etc/tmpfiles.d")
     os.system("sudo cp ./configurations/greeks_config/20-amdgpu.conf /usr/share/X11/xorg.conf.d")
     os.system("sudo chmod +x ./install_others.sh")
