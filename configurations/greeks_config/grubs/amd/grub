@@ -3,7 +3,7 @@
 GRUB_DEFAULT=0
 GRUB_TIMEOUT=10
 GRUB_RECORDFAIL_TIMEOUT=$GRUB_TIMEOUT
-GRUB_DISTRIBUTOR="Archcraft"
+GRUB_DISTRIBUTOR="Resonance Arch"
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash vt.global_cursor_default=0 loglevel=2 amd_iommu=on iommu=pt rd.systemd.show_status=false rd.udev.log-priority=3 sysrq_always_enabled=1"
 GRUB_CMDLINE_LINUX=""
 
@@ -48,7 +48,7 @@ GRUB_GFXPAYLOAD_LINUX=keep
 
 # Uncomment one of them for the gfx desired, a image background or a gfxtheme
 #GRUB_BACKGROUND="/usr/share/grub/background.png"
-GRUB_THEME="/boot/grub/themes/default/theme.txt"
+#GRUB_THEME="/boot/grub/themes/default/theme.txt"
 
 # Uncomment to get a beep at GRUB start
 #GRUB_INIT_TUNE="480 440 1"
