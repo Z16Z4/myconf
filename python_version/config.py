@@ -23,7 +23,7 @@ def greeks_qemu_config():
 
     #moving qemu configuration
     os.system("sudo cp ./configurations/greeks_config/qemu.conf /etc/libvirt")
-
+#tesing github codespaces with this comment
     #starting libvirtd services and log/network
     os.system("sudo systemctl enable libvirtd.service")
     os.system("sudo systemctl start libvirtd.service")
